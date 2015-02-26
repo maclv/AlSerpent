@@ -1,11 +1,11 @@
-# -*- coding:gb2312 -*-
+# -*- coding:utf-8 -*-
 __author__ = 'lvkun.lk'
 
 import time, datetime
 
 
 def showtime():
-    #´òÓ¡µ±Ç°Ê±¼ä£¬timeºÍdatetimeµÄÇø±ğÖ®Ò»ÊÇ datetime¿ÉÒÔµÃµ½¡°ºÁÃë¼¶¡±µÄÊ±¼ä
+    #æ‰“å°å½“å‰æ—¶é—´ï¼Œtimeå’Œdatetimeçš„åŒºåˆ«ä¹‹ä¸€æ˜¯ datetimeå¯ä»¥å¾—åˆ°â€œæ¯«ç§’çº§â€çš„æ—¶é—´
     print time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
     #print datetime.datetime.now()
     return time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))

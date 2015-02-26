@@ -3,6 +3,8 @@ __author__ = 'lvkun.lk'
 
 from mmisc import initconf,mtimer
 
+from http import HttpClient
+
 config_file_path="global_setting.ini"
 
 def info():
@@ -17,8 +19,12 @@ def info():
 
 if __name__ == "__main__":
     print "==START=="
-    info()
-    mtimer.showtime()
+    #info()
+    #mtimer.showtime()
+    agent=HttpClient.agent()
+    agent.get("alimovie.taobao.net","/login.htm")
+    agent.post("alimovie.taobao.net","/login.htm",'')
+    agent.get2("alimovie.taobao.net","/movie_detail.htm?id=1361")
     print "==End=="
 
 
